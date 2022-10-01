@@ -1,7 +1,16 @@
-const BAD_RATE = 0.8
+import { Celebrity } from '../types'
+
+const BAD_RATE = 0.3
 const GOOD_RATE = 0.8
 
-export const data = {
+const randomStatus = (): Celebrity['status'] => {
+  const random = Math.random()
+  if (random < BAD_RATE) return 'BAD'
+  if (random < GOOD_RATE) return 'GOOD'
+  return 'UGLY'
+}
+
+export const data: { celebrities: Celebrity[] } = {
   celebrities: [
     {
       id: 'katyperry',
@@ -19,12 +28,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Rrwt0K1rrx',
     },
     {
@@ -43,12 +47,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/kobIXw8MJn',
     },
     {
@@ -67,12 +66,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/81RUjj9Cza',
     },
     {
@@ -91,12 +85,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gE3AMLvzbI',
     },
     {
@@ -115,12 +104,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/BaPZcMQV2f',
     },
     {
@@ -139,12 +123,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/K8gA7tQWxp',
     },
     {
@@ -163,12 +142,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/66WOkBu2wQ',
     },
     {
@@ -187,12 +161,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/YssusfOPrj',
     },
     {
@@ -211,12 +180,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/JlMkKHxKo1',
     },
     {
@@ -235,12 +199,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/TRbotrB3Vz',
     },
     {
@@ -259,12 +218,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/iKaClxxX5w',
     },
     {
@@ -283,12 +237,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/lGR8iLnUq1',
     },
     {
@@ -307,12 +256,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/43G1jzK578',
     },
     {
@@ -331,12 +275,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/zVAWFm1pp9',
     },
     {
@@ -355,12 +294,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/bXW1C50AfO',
     },
     {
@@ -379,12 +313,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/IKOnfAha8E',
     },
     {
@@ -403,12 +332,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/0ttGEO1d8m',
     },
     {
@@ -427,12 +351,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/WQl8a4epug',
     },
     {
@@ -451,12 +370,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/usuo33543f',
     },
     {
@@ -475,12 +389,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/zUsqCh2RnX',
     },
     {
@@ -499,12 +408,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/UkvHzxUzmH',
     },
     {
@@ -523,12 +427,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/mktrK2FH6c',
     },
     {
@@ -547,12 +446,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/hJ2L5cP0li',
     },
     {
@@ -571,12 +465,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/v4Qwp7p9gK',
     },
     {
@@ -595,12 +484,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -619,12 +503,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/31T2EYGNLy',
     },
     {
@@ -643,12 +522,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/j3EByyxdNt',
     },
     {
@@ -667,12 +541,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/9TNQV4UgEG',
     },
     {
@@ -691,12 +560,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dJEgJMcnvg',
     },
     {
@@ -715,12 +579,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/BswCqgzpvU',
     },
     {
@@ -739,12 +598,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/f7mu0pspns',
     },
     {
@@ -763,12 +617,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -787,12 +636,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/OWBgyPHOx5',
     },
     {
@@ -811,12 +655,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sM8Yvumnzn',
     },
     {
@@ -835,12 +674,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/AgzYEogkEC',
     },
     {
@@ -859,12 +693,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/4XvreGAb2H',
     },
     {
@@ -883,12 +712,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ir8WqiPcDQ',
     },
     {
@@ -907,12 +731,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/vjnxtAuz86',
     },
     {
@@ -931,12 +750,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'http://t.co/qu6CkTVbHi',
     },
     {
@@ -955,12 +769,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/KdbWe0TdpV',
     },
     {
@@ -979,12 +788,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/C7Jqp9zGZV',
     },
     {
@@ -1003,12 +807,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/1RqqR1uiwa',
     },
     {
@@ -1027,12 +826,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/NLfOP26NBK',
     },
     {
@@ -1051,12 +845,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/0deDqzcMzi',
     },
     {
@@ -1075,12 +864,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/RGoySnbjqv',
     },
     {
@@ -1099,12 +883,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/y9cYcHwCN4',
     },
     {
@@ -1123,12 +902,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/NJY7giyFC0',
     },
     {
@@ -1147,12 +921,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/zVkAnvGWS0',
     },
     {
@@ -1171,12 +940,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/2YiJ4e3wx2',
     },
     {
@@ -1195,12 +959,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/j112B2ajOn',
     },
     {
@@ -1219,12 +978,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/CTrn7zicuQ',
     },
     {
@@ -1243,12 +997,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1267,12 +1016,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/R6cANtszQ0',
     },
     {
@@ -1291,12 +1035,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/OiR5i8mYmH',
     },
     {
@@ -1315,12 +1054,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1339,12 +1073,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1363,12 +1092,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/6OMe2JjTcs',
     },
     {
@@ -1387,12 +1111,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/0XuUqRhgXd',
     },
     {
@@ -1411,12 +1130,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/8Q8pJPIPYV',
     },
     {
@@ -1435,12 +1149,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/HcZR41beQO',
     },
     {
@@ -1459,12 +1168,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EkujUvGmd6',
     },
     {
@@ -1483,12 +1187,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1507,12 +1206,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/0ZWZ8QdzcD',
     },
     {
@@ -1531,12 +1225,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sO1wZpkzsw',
     },
     {
@@ -1555,12 +1244,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Q4K5iMAnHK',
     },
     {
@@ -1579,12 +1263,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1603,12 +1282,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/r6O27JxRZF',
     },
     {
@@ -1627,12 +1301,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/zXDi7YE5cb',
     },
     {
@@ -1651,12 +1320,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/W6u8Cd2ZW7',
     },
     {
@@ -1675,12 +1339,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/QGP4qNP8Ra',
     },
     {
@@ -1699,12 +1358,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GDFj4cMlPz',
     },
     {
@@ -1723,12 +1377,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1747,12 +1396,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/3R6VifqW2o',
     },
     {
@@ -1771,12 +1415,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gf7hhkgGly',
     },
     {
@@ -1795,12 +1434,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/F0V5gUOJYh',
     },
     {
@@ -1819,12 +1453,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/l1g1zWT1r6',
     },
     {
@@ -1843,12 +1472,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/8I8rPzMZmU',
     },
     {
@@ -1867,12 +1491,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gMwbETQLwT',
     },
     {
@@ -1891,12 +1510,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/f49ToftapX',
     },
     {
@@ -1915,12 +1529,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/S9JuGbiY20',
     },
     {
@@ -1939,12 +1548,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -1963,12 +1567,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/X6ynCC2MUh',
     },
     {
@@ -1987,12 +1586,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/60LE6NsUqb',
     },
     {
@@ -2011,12 +1605,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2035,12 +1624,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2059,12 +1643,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2083,12 +1662,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2107,12 +1681,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2131,12 +1700,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/WDT7A5Kzl5',
     },
     {
@@ -2155,12 +1719,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/oO0liCnPqV',
     },
     {
@@ -2179,12 +1738,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ptDU6qJe5h',
     },
     {
@@ -2203,12 +1757,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sTxLmb6IT9',
     },
     {
@@ -2227,12 +1776,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/cHKHxahsxG',
     },
     {
@@ -2251,12 +1795,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2275,12 +1814,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/shINrgr6lt',
     },
     {
@@ -2299,12 +1833,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/XgBwcqpBq8',
     },
     {
@@ -2323,12 +1852,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gCfGcJhU6c',
     },
     {
@@ -2347,12 +1871,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/mt8FScvcYZ',
     },
     {
@@ -2371,12 +1890,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/YY0PcegLEp',
     },
     {
@@ -2395,12 +1909,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/1vcElGXzdh',
     },
     {
@@ -2419,12 +1928,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ZiKQwlVLn7',
     },
     {
@@ -2443,12 +1947,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/H2kkcMQ6iJ',
     },
     {
@@ -2467,12 +1966,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/lk9B1LfexW',
     },
     {
@@ -2491,12 +1985,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2515,12 +2004,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/7mSqiOt2oI',
     },
     {
@@ -2539,12 +2023,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/05ltFz6mIs',
     },
     {
@@ -2563,12 +2042,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2587,12 +2061,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/T7u92u5UbT',
     },
     {
@@ -2611,12 +2080,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2635,12 +2099,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/MToWRjyRO9',
     },
     {
@@ -2659,12 +2118,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/c0nOaNWOj3',
     },
     {
@@ -2683,12 +2137,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/8uS5kGPtkS',
     },
     {
@@ -2707,12 +2156,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/j2WtHXamdn',
     },
     {
@@ -2731,12 +2175,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/beodWW6qzA',
     },
     {
@@ -2755,12 +2194,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GKNqjzHW2B',
     },
     {
@@ -2779,12 +2213,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ye3KOeXejJ',
     },
     {
@@ -2803,12 +2232,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Vce9R6Ti4r',
     },
     {
@@ -2827,12 +2251,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/U3ACKG02jA',
     },
     {
@@ -2851,12 +2270,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2875,12 +2289,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gkqMei509D',
     },
     {
@@ -2899,12 +2308,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2923,12 +2327,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/a7QBV55Tzd',
     },
     {
@@ -2947,12 +2346,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/xuVgBcZUVQ',
     },
     {
@@ -2971,12 +2365,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -2995,12 +2384,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/inQI32NFSV',
     },
     {
@@ -3019,12 +2403,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'http://t.co/Amz8pk3eud',
     },
     {
@@ -3043,12 +2422,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/26YQPK2Bbq',
     },
     {
@@ -3067,12 +2441,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/qtAjdO7L6G',
     },
     {
@@ -3091,12 +2460,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/a58mReKSLX',
     },
     {
@@ -3115,12 +2479,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/DxGXPAxUHr',
     },
     {
@@ -3139,12 +2498,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/oJrxgExRFB',
     },
     {
@@ -3163,12 +2517,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/FWGkg8yOGL',
     },
     {
@@ -3187,12 +2536,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/CuVWVOvvbF',
     },
     {
@@ -3211,12 +2555,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EFk270RPFy',
     },
     {
@@ -3235,12 +2574,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/MJNlN1r7gT',
     },
     {
@@ -3259,12 +2593,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -3283,12 +2612,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Uonl9un8bx',
     },
     {
@@ -3307,12 +2631,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EkRvsEtYGu',
     },
     {
@@ -3331,12 +2650,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/KPXAbPfVx7',
     },
     {
@@ -3355,12 +2669,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/vzsLXPu2aX',
     },
     {
@@ -3379,12 +2688,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/3z4ougphDE',
     },
     {
@@ -3403,12 +2707,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/4QPP5WwDGL',
     },
     {
@@ -3427,12 +2726,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/H5dWXICu0z',
     },
     {
@@ -3451,12 +2745,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ZfQAbHUEFf',
     },
     {
@@ -3475,12 +2764,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/SXFn3jgKZ1',
     },
     {
@@ -3499,12 +2783,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/usJHBHZXu8',
     },
     {
@@ -3523,12 +2802,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/14b5hLNobG',
     },
     {
@@ -3547,12 +2821,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -3571,12 +2840,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -3595,12 +2859,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/zO7TJLqqGk',
     },
     {
@@ -3619,12 +2878,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Dxuh14cenr',
     },
     {
@@ -3643,12 +2897,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -3667,12 +2916,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/C9cxJ4LeS9',
     },
     {
@@ -3691,12 +2935,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/P9NidJNeR0',
     },
     {
@@ -3715,12 +2954,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sUBT19iMtV',
     },
     {
@@ -3739,12 +2973,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/lmrjGSuHPA',
     },
     {
@@ -3763,12 +2992,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ED9QOK5CI5',
     },
     {
@@ -3787,12 +3011,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/X2frQoZ7qL',
     },
     {
@@ -3811,12 +3030,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/qBZDwOexxQ',
     },
     {
@@ -3835,12 +3049,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/SNVvebitVd',
     },
     {
@@ -3859,12 +3068,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/4Pti31Fscu',
     },
     {
@@ -3883,12 +3087,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/rhHDdknrTZ',
     },
     {
@@ -3907,12 +3106,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/zYWh7pCI4E',
     },
     {
@@ -3931,12 +3125,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/oIIXcEJydx',
     },
     {
@@ -3955,12 +3144,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/5DUCrqz2Pr',
     },
     {
@@ -3979,12 +3163,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/kO7DNiuwxA',
     },
     {
@@ -4003,12 +3182,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ORflPzOWVX',
     },
     {
@@ -4027,12 +3201,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/jGIEYCrRHo',
     },
     {
@@ -4051,12 +3220,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Kz0mYJlKog',
     },
     {
@@ -4075,12 +3239,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/pRo1MVde1P',
     },
     {
@@ -4099,12 +3258,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/jD9qjLPa9L',
     },
     {
@@ -4123,12 +3277,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/n1d8iqGpHe',
     },
     {
@@ -4147,12 +3296,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/NgwENhm2UL',
     },
     {
@@ -4171,12 +3315,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/J7sXgAyKYh',
     },
     {
@@ -4195,12 +3334,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/li4bxrvdvV',
     },
     {
@@ -4219,12 +3353,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/wsm1GKrKWX',
     },
     {
@@ -4243,12 +3372,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ZNIjYXtdmi',
     },
     {
@@ -4267,12 +3391,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -4291,12 +3410,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dN7ARrIIR9',
     },
     {
@@ -4315,12 +3429,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/priVWs6lYi',
     },
     {
@@ -4339,12 +3448,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/FcwJl1uhoo',
     },
     {
@@ -4363,12 +3467,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/CVOmJH2XjS',
     },
     {
@@ -4387,12 +3486,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/mlCw0cOvTC',
     },
     {
@@ -4411,12 +3505,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/60OAQdPZyh',
     },
     {
@@ -4435,12 +3524,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -4459,12 +3543,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GpfrcZzaza',
     },
     {
@@ -4483,12 +3562,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/x7KWWXIlzF',
     },
     {
@@ -4507,12 +3581,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Ij9sFRFOkg',
     },
     {
@@ -4531,12 +3600,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/nSDTSggJIQ',
     },
     {
@@ -4555,12 +3619,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/cHeM5DRC2l',
     },
     {
@@ -4579,12 +3638,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dXQNqn6Bvv',
     },
     {
@@ -4603,12 +3657,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/u68Er8KlOP',
     },
     {
@@ -4627,12 +3676,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/JSiqRjkgB8',
     },
     {
@@ -4651,12 +3695,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gpims3JrEM',
     },
     {
@@ -4675,12 +3714,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -4699,12 +3733,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/fyrNMCrOai',
     },
     {
@@ -4723,12 +3752,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -4747,12 +3771,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/2FoVuFAJcn',
     },
     {
@@ -4771,12 +3790,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EpOfk6KD1i',
     },
     {
@@ -4795,12 +3809,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dglUzvMFTP',
     },
     {
@@ -4819,12 +3828,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/qlTDhox5Kz',
     },
     {
@@ -4843,12 +3847,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/nqpeIjJWub',
     },
     {
@@ -4867,12 +3866,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/JhFxJXslcs',
     },
     {
@@ -4891,12 +3885,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/iKaDATBAUR',
     },
     {
@@ -4915,12 +3904,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GwE0467yPy',
     },
     {
@@ -4939,12 +3923,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Hm0GeH0qlv',
     },
     {
@@ -4963,12 +3942,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/WelP06Kku4',
     },
     {
@@ -4987,12 +3961,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sxJtgQkmei',
     },
     {
@@ -5011,12 +3980,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/YTtPrFkLtL',
     },
     {
@@ -5035,12 +3999,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/xnA8GvEKBq',
     },
     {
@@ -5059,12 +4018,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/7j7Svt2PMg',
     },
     {
@@ -5083,12 +4037,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5107,12 +4056,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Jv7X4OyzVI',
     },
     {
@@ -5131,12 +4075,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/RrhHHI4Mha',
     },
     {
@@ -5155,12 +4094,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5179,12 +4113,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/oDOcZ3oPBT',
     },
     {
@@ -5203,12 +4132,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/JwfRO7KAtv',
     },
     {
@@ -5227,12 +4151,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/pUPd8FEb9l',
     },
     {
@@ -5251,12 +4170,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5275,12 +4189,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/K8XuMs7NtA',
     },
     {
@@ -5299,12 +4208,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5323,12 +4227,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5347,12 +4246,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/BcI0eeZe2S',
     },
     {
@@ -5371,12 +4265,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/IhAX4emGMR',
     },
     {
@@ -5395,12 +4284,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/i2OrWrdaX4',
     },
     {
@@ -5419,12 +4303,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/oYEV9eVeO1',
     },
     {
@@ -5443,12 +4322,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/HuOOVYtJPd',
     },
     {
@@ -5467,12 +4341,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dRgF7ioBxi',
     },
     {
@@ -5491,12 +4360,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/RlpMZXLq4P',
     },
     {
@@ -5515,12 +4379,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gS1GeUNEAD',
     },
     {
@@ -5539,12 +4398,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5563,12 +4417,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5587,12 +4436,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/4OjN2xilBd',
     },
     {
@@ -5611,12 +4455,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/8LsZBYWfuW',
     },
     {
@@ -5635,12 +4474,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/YL9dbEHRGf',
     },
     {
@@ -5659,12 +4493,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sQiPGyMIFA',
     },
     {
@@ -5683,12 +4512,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/BpwhXuspE0',
     },
     {
@@ -5707,12 +4531,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/rO36Sh8l13',
     },
     {
@@ -5731,12 +4550,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5755,12 +4569,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5779,12 +4588,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5803,12 +4607,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/vzta0A7JpW',
     },
     {
@@ -5827,12 +4626,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5851,12 +4645,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/YxoO6uZU1l',
     },
     {
@@ -5875,12 +4664,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -5899,12 +4683,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/qhc4Sh4dn9',
     },
     {
@@ -5923,12 +4702,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ZwNW2ZEY9q',
     },
     {
@@ -5947,12 +4721,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/tiMoAap4de',
     },
     {
@@ -5971,12 +4740,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dQQQA3ino7',
     },
     {
@@ -5995,12 +4759,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/1HhUwbhob1',
     },
     {
@@ -6019,12 +4778,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'http://t.co/ewJ3B4NdBX',
     },
     {
@@ -6043,12 +4797,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/s6NyJ058oO',
     },
     {
@@ -6067,12 +4816,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/tDpJcANPe8',
     },
     {
@@ -6091,12 +4835,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/pFvoni97LG',
     },
     {
@@ -6115,12 +4854,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/FlQ2C2GcX2',
     },
     {
@@ -6139,12 +4873,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6163,12 +4892,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/UQouLIbKuJ',
     },
     {
@@ -6187,12 +4911,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6211,12 +4930,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/tspRcKmfCC',
     },
     {
@@ -6235,12 +4949,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/DNUuLsFG0y',
     },
     {
@@ -6259,12 +4968,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6283,12 +4987,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/xWxnQ3Fzll',
     },
     {
@@ -6307,12 +5006,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EY689sGC4N',
     },
     {
@@ -6331,12 +5025,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/LN2PUCAcsd',
     },
     {
@@ -6355,12 +5044,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6379,12 +5063,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/PQEC9tNqLm',
     },
     {
@@ -6403,12 +5082,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/RjeJ9bWjs1',
     },
     {
@@ -6427,12 +5101,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/IKCPpmi8j2',
     },
     {
@@ -6451,12 +5120,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/HEP9s8TaW4',
     },
     {
@@ -6475,12 +5139,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/xu8xz5lfP7',
     },
     {
@@ -6499,12 +5158,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6523,12 +5177,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'http://t.co/vViF4iyusx',
     },
     {
@@ -6547,12 +5196,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/5Q7TQkzdAZ',
     },
     {
@@ -6571,12 +5215,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/pV0jRJY7o4',
     },
     {
@@ -6595,12 +5234,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/tll7hLAsWr',
     },
     {
@@ -6619,12 +5253,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Msx3aYyleT',
     },
     {
@@ -6643,12 +5272,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6667,12 +5291,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/QZDzse4qdU',
     },
     {
@@ -6691,12 +5310,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/5Zgq6XMurH',
     },
     {
@@ -6715,12 +5329,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6739,12 +5348,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/5hrF56xlrW',
     },
     {
@@ -6763,12 +5367,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ICr9Bmjn3S',
     },
     {
@@ -6787,12 +5386,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/rPRa5sZTpp',
     },
     {
@@ -6811,12 +5405,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/pCHQtXRNnu',
     },
     {
@@ -6835,12 +5424,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -6859,12 +5443,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/TvNPBL2YiQ',
     },
     {
@@ -6883,12 +5462,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/vQu2b4zmFS',
     },
     {
@@ -6907,12 +5481,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/P89si4DzEw',
     },
     {
@@ -6931,12 +5500,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/IrwRSljX3H',
     },
     {
@@ -6955,12 +5519,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/JeIiIkq12o',
     },
     {
@@ -6979,12 +5538,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/x9vucJ5B1N',
     },
     {
@@ -7003,12 +5557,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/iKvAOKvoXD',
     },
     {
@@ -7027,12 +5576,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7051,12 +5595,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7075,12 +5614,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7099,12 +5633,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/miCe0dlq7d',
     },
     {
@@ -7123,12 +5652,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/uUPm1FlRse',
     },
     {
@@ -7147,12 +5671,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/eMr2A4WA2b',
     },
     {
@@ -7171,12 +5690,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/eBVX72yi2f',
     },
     {
@@ -7195,12 +5709,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EdE6wuq1X2',
     },
     {
@@ -7219,12 +5728,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/uyahLtrlnW',
     },
     {
@@ -7243,12 +5747,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/TySBfrQ8DD',
     },
     {
@@ -7267,12 +5766,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7291,12 +5785,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/vCfKS8b8s8',
     },
     {
@@ -7315,12 +5804,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/1LjmfFxEJy',
     },
     {
@@ -7339,12 +5823,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Opl8B4pbYN',
     },
     {
@@ -7363,12 +5842,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GJUu44fqNQ',
     },
     {
@@ -7387,12 +5861,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7411,12 +5880,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7435,12 +5899,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7459,12 +5918,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7483,12 +5937,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7507,12 +5956,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7531,12 +5975,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7555,12 +5994,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7579,12 +6013,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ACf3Un7jxt',
     },
     {
@@ -7603,12 +6032,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/rSSNCUmdOP',
     },
     {
@@ -7627,12 +6051,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/juEIX5eHsD',
     },
     {
@@ -7651,12 +6070,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/HCXuIFxuj7',
     },
     {
@@ -7675,12 +6089,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sEmaTF76T5',
     },
     {
@@ -7699,12 +6108,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/jkdYW9VwMw',
     },
     {
@@ -7723,12 +6127,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/xak2DtTPRV',
     },
     {
@@ -7747,12 +6146,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/efS7vQgMYo',
     },
     {
@@ -7771,12 +6165,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/7PD7SBJgzo',
     },
     {
@@ -7795,12 +6184,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/1sL0CjM6Mz',
     },
     {
@@ -7819,12 +6203,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/DMT5gal4lf',
     },
     {
@@ -7843,12 +6222,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ZRAWLXkkTo',
     },
     {
@@ -7867,12 +6241,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -7891,12 +6260,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/DfGzMVDvNi',
     },
     {
@@ -7915,12 +6279,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/fOaX5gjHTx',
     },
     {
@@ -7939,12 +6298,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/AgwukDDj3b',
     },
     {
@@ -7963,12 +6317,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/RLgtvl9aAq',
     },
     {
@@ -7987,12 +6336,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/MIbBO1upzE',
     },
     {
@@ -8011,12 +6355,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/kkIAfUujbk',
     },
     {
@@ -8035,12 +6374,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/kegopSSzeM',
     },
     {
@@ -8059,12 +6393,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/0VBqy7KY6i',
     },
     {
@@ -8083,12 +6412,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/NJKBsK3NQY',
     },
     {
@@ -8107,12 +6431,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/eKoWbdl5uf',
     },
     {
@@ -8131,12 +6450,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/P6PzNPpMz8',
     },
     {
@@ -8155,12 +6469,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GU8hodzDaN',
     },
     {
@@ -8179,12 +6488,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/QQxu8kgO6z',
     },
     {
@@ -8203,12 +6507,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -8227,12 +6526,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Pr9SLFD3Zi',
     },
     {
@@ -8251,12 +6545,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -8275,12 +6564,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/6Rp1PkeKf2',
     },
     {
@@ -8299,12 +6583,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/We6ptmmxO8',
     },
     {
@@ -8323,12 +6602,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -8347,12 +6621,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -8371,12 +6640,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/dJ8p3reHgf',
     },
     {
@@ -8395,12 +6659,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Udd5MDni0I',
     },
     {
@@ -8419,12 +6678,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/TbAiMXvDf4',
     },
     {
@@ -8443,12 +6697,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/cOTWE9mwdn',
     },
     {
@@ -8467,12 +6716,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/hVYcxR1GAj',
     },
     {
@@ -8491,12 +6735,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/2egEK01dcQ',
     },
     {
@@ -8515,12 +6754,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -8539,12 +6773,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/R7XByOiltm',
     },
     {
@@ -8563,12 +6792,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/OmYNpZ8Kkq',
     },
     {
@@ -8587,12 +6811,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Xu5BRwd5W9',
     },
     {
@@ -8611,12 +6830,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/C35zhXXD3f',
     },
     {
@@ -8635,12 +6849,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ptIlT7oalc',
     },
     {
@@ -8659,12 +6868,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/GBMqBEZKQI',
     },
     {
@@ -8683,12 +6887,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Zj4fRjkIgS',
     },
     {
@@ -8707,12 +6906,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/LdoBxaCV2i',
     },
     {
@@ -8731,12 +6925,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/I9OeTFYErG',
     },
     {
@@ -8755,12 +6944,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/H6I8rmysul',
     },
     {
@@ -8779,12 +6963,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/FlBwuLEMcL',
     },
     {
@@ -8803,12 +6982,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/0WDwgpNhnP',
     },
     {
@@ -8827,12 +7001,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/sJ72W8oAs9',
     },
     {
@@ -8851,12 +7020,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/1NHsjml4FS',
     },
     {
@@ -8875,12 +7039,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/rJzcean2XF',
     },
     {
@@ -8899,12 +7058,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/fIkin3Lpbi',
     },
     {
@@ -8923,12 +7077,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/gXJDUXJqdK',
     },
     {
@@ -8947,12 +7096,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -8971,12 +7115,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/LWDrMKe2Kd',
     },
     {
@@ -8995,12 +7134,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Z9ZZMMbum5',
     },
     {
@@ -9019,12 +7153,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -9043,12 +7172,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/N5XduSi0e6',
     },
     {
@@ -9067,12 +7191,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -9091,12 +7210,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/ED7lcdzxts',
     },
     {
@@ -9115,12 +7229,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/8QUI6FrkoI',
     },
     {
@@ -9139,12 +7248,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/Wi950RcSM1',
     },
     {
@@ -9163,12 +7267,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'http://t.co/1Hulh29JIj',
     },
     {
@@ -9187,12 +7286,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/YtKesEyNdW',
     },
     {
@@ -9211,12 +7305,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/OUz4GsIjV2',
     },
     {
@@ -9235,12 +7324,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/EamUJaAWiE',
     },
     {
@@ -9259,12 +7343,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/khIlebxX8g',
     },
     {
@@ -9283,12 +7362,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
     {
@@ -9307,12 +7381,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: 'https://t.co/jlBCpx9ZTM',
     },
     {
@@ -9331,12 +7400,7 @@ export const data = {
         },
       ],
       category: 'ART',
-      status:
-        Math.random() < BAD_RATE
-          ? 'BAD'
-          : Math.random() < GOOD_RATE
-          ? 'GOOD'
-          : 'UGLY',
+      status: randomStatus(),
       statusReferenceUrl: null,
     },
   ],
